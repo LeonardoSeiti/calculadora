@@ -10,20 +10,25 @@ function App() {
    console.log("Soma: ", soma);
    alert("Soma: " + soma)
   }
+  function resultado(){
+    alert("Resultado: " + soma)
+  }
 
   return(
     <View style= {{position: "absolute",
-    top: 150,
-    right: 150,
-    left: 250,
-    backgroundColor: "lightgrey",
-    padding: 100}}>
+    top: 250,
+    right: 800,
+    left: 800,
+    backgroundColor: "lightgreen",
+    padding: 200,
+    }}>
     
       <Text>Digite o 1º numero </Text>
-      <TextInput style={{backgroundColor: "blue"}} value={num1} onChangeText={setNum1}/>
+      <TextInput style={{backgroundColor: "yellow"}} value={num1} onChangeText={setNum1}/>
       <Text>Digite o 2º numero </Text>
-      <TextInput style={{backgroundColor: "red"}} value={num2} onChangeText={setNum2}/>
+      <TextInput style={{backgroundColor: "purple"}} value={num2} onChangeText={setNum2}/>
       <Button title='Somar' onPress={somar}/>
+      <Text>Resultado:  </Text>
       
 
     </View>
